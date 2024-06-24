@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Plus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title-container">
+            <h1 class="header-title">To-do List Extendido</h1>
+            <p class="header-subtitle">Elevando conceito de to-do list</p>
+            <p class="header-subtitle">Agende suas tarefas e compromissos, por mês, semana ou dia.</p>
+        </div>
+        <div class="header-links">
+            <a href="#">Banco de notas</a>
+            <a href="#">Editor web dinâmico</a>
+            <a href="#">Projetor de matrizes</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2 class="sidebar-title">Configurações</h2>
+            <div class="date-navigation">
+                <button id="prev-month">Mês Anterior</button>
+                <button id="next-month">Mês Seguinte</button>
+                <button id="prev-week">Semana Anterior</button>
+                <button id="next-week">Semana Seguinte</button>
+                <button id="prev-day">Dia Anterior</button>
+                <button id="next-day">Dia Seguinte</button>
+                <input type="date" id="selected-date" onload="setDefaultDate()">
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="content-title">Lista de Tarefas</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Adicionar nova tarefa" required>
+                <input type="text" id="task-details" placeholder="Adicionar detalhes" required>
+                <input type="time" id="task-time" required>
+                <label>
+                    <input type="checkbox" id="task-daily"> Diariamente
+                </label>
+                <label>
+                    <input type="checkbox" id="task-weekly"> Semanalmente
+                </label>
+                <label>
+                    <input type="checkbox" id="task-monthly"> Mensalmente
+                </label>
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <p>&copy; 2024 To-Do List Extendido | Desenvolvido por José Roberto Friederich - Email: joserobertofriederich@gmail.com</p>
+        <p>Caso esteja interessado no desenvolvimento dos seus projetos, entre em contato e marcaremos uma reunião.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

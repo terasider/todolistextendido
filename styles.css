@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    background-color: #333; /* Cor de fundo escuro */
+    border-bottom: 2px solid #dc3545; /* Linha inferior vermelha */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center;
+    padding: 20px 50px; /* Espaçamento interno */
+}
+
+.header-title-container {
+    background: linear-gradient(to right, #ff5733, #dc3545); /* Degradê de laranja para vermelho */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.header-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #555;
+}
+
+.sidebar-title {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+}
+
+.date-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-navigation button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.date-navigation button:hover {
+    background-color: #0056b3;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #666;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.footer {
+    margin-top: 15px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
